@@ -1,6 +1,6 @@
 # Hi there, Wahyu Aji Pangestu 👋
 ## About me:
-- 🔭 I’m currently studyng at Udayana Universiti
+- 🔭 I’m currently studyng at Udayana University
 - 🌱 I’m currently learning HTML, CSS and Javascript
 - 👯 I’m looking to Web Developer
 - 🤔 I’m looking for suggest for Web Developer

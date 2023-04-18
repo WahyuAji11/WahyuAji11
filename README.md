@@ -1,16 +1,30 @@
-### Hi there 👋
+# Hi there, Wahyu Aji Pangestu 👋
+## About me:
+- 🔭 I’m currently studyng at Udayana Universiti
+- 🌱 I’m currently learning HTML, CSS and Javascript
+- 👯 I’m looking to Web Developer
+- 🤔 I’m looking for suggest for Web Developer
+- 💬 Ask me about anything
+- 📫 How to reach me: alhafidzw1@gmail.com
 
-<!--
-**WahyuAji11/WahyuAji11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Languages and Tools:
 
-Here are some ideas to get you started:
+[<img align="left" alt="HTML" width="35px" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/96-html5-512.png" style="padding-right:10px;" />][webdev]
+[<img align="left" alt="CSS" width="35px" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" style="padding-right:10px;" />][webdev]
+[<img align="left" alt="Javascript" width="30px" src="https://www.freepnglogos.com/uploads/javascript/javascript-online-logo-for-website-0.png" style="padding-right:10px;" />][webdev]
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br />
+<br />
+
+---
+### Connect with me:
+
+[![website](./img/youtube-light.svg)](https://www.youtube.com/channel/UCHdi7Qdhy5DoTuNAAzC762w#gh-light-mode-only)
+[![website](./img/youtube-dark.svg)](https://www.youtube.com/channel/UCHdi7Qdhy5DoTuNAAzC762w#gh-dark-mode-only)
+&nbsp;&nbsp;
+[![website](./img/instagram-light.svg)](https://www.instagram.com/w.aji_666#gh-light-mode-only)
+[![website](./img/instagram-dark.svg)](https://www.instagram.com/w.aji_666#gh-dark-mode-only)
+
+
+
+[webdev]: https://https://github.com/WahyuAji11/WahyuAji11

@@ -25,7 +25,6 @@
 &nbsp;&nbsp;
 [![website](./img/instagram-light.svg)](https://www.instagram.com/w.aji_666#gh-light-mode-only)
 [![website](./img/instagram-dark.svg)](https://www.instagram.com/w.aji_666#gh-dark-mode-only)
-[![website](https://www.pngall.com/wp-content/uploads/13/Linkedin-Logo-PNG-Picture.png)](www.linkedin.com/in/wahyu-aji-389681273)
 
 
 

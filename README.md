@@ -2,8 +2,8 @@
 ## About me:
 - 🎓 I’m Undergraduate at Udayana University
 - 🌱 I’m currently learning HTML, CSS, Javascript and PHP
-- 👯 I’m looking to Web Developer
-- 🤔 I’m looking for suggest for Web Developer
+- 👯 I’m looking to Software Engineer
+- 🤔 I’m looking for suggest for Software Engineer
 - 💬 Ask me about anything
 - 📫 How to reach me: alhafidzw1@gmail.com
 
@@ -25,6 +25,8 @@
 &nbsp;&nbsp;
 [![website](./img/instagram-light.svg)](https://www.instagram.com/w.aji_666#gh-light-mode-only)
 [![website](./img/instagram-dark.svg)](https://www.instagram.com/w.aji_666#gh-dark-mode-only)
+[![website]([./img/instagram-light.svg](https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png))](www.linkedin.com/in/wahyu-aji-389681273)
+[![website]([./img/instagram-dark.svg](https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png))](www.linkedin.com/in/wahyu-aji-389681273)
 
 
 

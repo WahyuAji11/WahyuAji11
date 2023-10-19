@@ -25,7 +25,7 @@
 &nbsp;&nbsp;
 [![website](./img/instagram-light.svg)](https://www.instagram.com/w.aji_666#gh-light-mode-only)
 [![website](./img/instagram-dark.svg)](https://www.instagram.com/w.aji_666#gh-dark-mode-only)
-[![website](https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png)](www.linkedin.com/in/wahyu-aji-389681273)
+[![website](./img/linkedin-light.png)](www.linkedin.com/in/wahyu-aji-389681273)
 
 
 

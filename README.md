@@ -12,6 +12,7 @@
 [<img align="left" alt="HTML" width="35px" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/96-html5-512.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="CSS" width="35px" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" style="padding-right:10px;" />][webdev]
 [<img align="left" alt="Javascript" width="30px" src="https://www.freepnglogos.com/uploads/javascript/javascript-online-logo-for-website-0.png" style="padding-right:10px;" />][webdev]
+[<img align="left" alt="Javascript" width="30px" src="[https://www.freepnglogos.com/uploads/javascript/javascript-online-logo-for-website-0.png](https://brandslogos.com/wp-content/uploads/images/large/php-logo.png)" style="padding-right:10px;" />][webdev]
 
 <br />
 <br />

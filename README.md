@@ -1,7 +1,7 @@
 # Hi there, Wahyu Aji Pangestu 👋
 ## About me:
-- 🎓 I’m currently student at Udayana University
-- 🌱 I’m currently learning HTML, CSS and Javascript
+- 🎓 I’m Undergraduate at Udayana University
+- 🌱 I’m currently learning HTML, CSS, Javascript and PHP
 - 👯 I’m looking to Web Developer
 - 🤔 I’m looking for suggest for Web Developer
 - 💬 Ask me about anything

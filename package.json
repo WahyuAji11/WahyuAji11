@@ -1,9 +1,9 @@
 {
-  "name": "nhendra-readme",
+  "name": "wahyuaji11-readme",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/nhendra",
-  "author": "Mahendra Nanda ",
+  "repository": "https://github.com/WahyuAji11",
+  "author": "Adjie ",
   "license": "Unlicense",
   "devDependencies": {
     "@types/node": "^15.12.1",

@@ -29,9 +29,9 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Beep boop beep boop: update 😊"
-          commit_user_name: nhendra
-          commit_user_email: 99159109+NHendra@users.noreply.github.com
-          commit_author: nhendra <99159109+NHendra@users.noreply.github.com>
+          commit_user_name: WahyuAji11
+          commit_user_email: alhafidzw1@gmail.com
+          commit_author: WahyuAji11 <alhafidzw1@gmail.com>
           file_pattern: "*.svg"
         env:
           GITHUB_TOKEN: ${{ secrets.READ_TOKEN }}

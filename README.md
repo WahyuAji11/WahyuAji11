@@ -1,6 +1,5 @@
 [![chat window](./out/output.svg)](https://wahyu-aji-pangestu.vercel.app/)
 
-<img align="right" alt="Coding" width="300" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/media/7ed7d5ca074b48b328150e5a231e8d1f.gif">
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

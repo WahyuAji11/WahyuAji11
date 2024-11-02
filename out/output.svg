@@ -1,7 +1,7 @@
 <svg width="580" height="380" viewBox="0 0 580 380" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     .bubble {
-      fill: ##20232a;
+      fill: #20232a;
       border: white;
     }
     a {
@@ -158,13 +158,14 @@
 
     @media (prefers-color-scheme: dark) {
       .bubble {
-        fill: #040470;
+        fill: #20232a;
+        border: white;
       }
       text {
         fill: #ffff;
       }
       a {
-        fill: #0079ff;
+        fill: #60d4f3;
       }
     }
 

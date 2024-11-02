@@ -1,7 +1,7 @@
 <svg width="580" height="380" viewBox="0 0 580 380" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     .bubble {
-      fill: #fd2f69;
+      fill: #040470;
     }
     a {
       fill: #0079ff;
@@ -321,7 +321,7 @@
   <g transform="translate(10, 120)" class="msg-3">
     <rect x="50" width="490" height="66.1302" rx="18.0355" class="bubble" />
     <text x="65" y="27">I'm currently working as a web developer. I have a lot of</text>
-    <text x="65" y="50">interests including Game, Music, Automotive and Anime.</text>
+    <text x="65" y="50">interests including Game, Music, Gym and Anime.</text>
     <image href="https://avatars.githubusercontent.com/u/126868658?v=4" height="40" width="40" preserveAspectRatio="xMinYMin slice" clip-path="inset(0% round 25px)"/>
   </g>
 
@@ -348,7 +348,7 @@
     <rect x="50" width="480" height="42" rx="18.0355" class="bubble" />
     <text x="65" y="27">
       You can find my socials at
-      <a xlink:href="https://wahyu-aji-pangestu.vercel.app/">wahyu-aji-pangestu.vercel.app/</a>
+      <a xlink:href="https://wahyu-aji-pangestu.vercel.app/">My Website</a>
     </text>
     <image href="https://avatars.githubusercontent.com/u/126868658?v=4" height="40" width="40" preserveAspectRatio="xMinYMin slice" clip-path="inset(0% round 25px)"/>
   </g>

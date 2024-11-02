@@ -2,13 +2,6 @@
 
 <img align="right" alt="Coding" width="200" src="https://media1.tenor.com/m/qMH5o_XizbcAAAAd/but-here%27s-the-coder.gif">
 
-
-- 🔭 I’m currently working on **Hooxie,id**
-
-- 👨‍💻 All of my projects are available at [https://wahyu-aji-pangestu.vercel.app/](https://wahyu-aji-pangestu.vercel.app/)
-
-- 📫 How to reach me **alhafidzw1@gmail.com**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/https://www.linkedin.com/in/wahyu-aji-389681273/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/wahyu-aji-389681273/" height="30" width="40" /></a>

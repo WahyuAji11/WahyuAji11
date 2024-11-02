@@ -271,7 +271,7 @@
 
   <!-- Hi, I'm Aji -->
   <g transform="translate(10, 0)" class="msg-1 bubble">
-    <rect x="50" width="150" height="42" rx="18.0355" />
+    <rect x="50" width="190" height="42" rx="18.0355" />
     <text x="65" y="27">Hello guys. Aji here!</text>
     <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxlBMVEUcFScXEydOSFgPDCMwKzwiHjASDyYMCiAsJzkoJDY0Lj8bFysnIDNBO0ofGi1HQ1Q8NkZEP1AHBBw2M0QYBh0kDiYuFys5IzSRLjiSbnF5KTZRTl9vTFV4N0JsdotvZG/qg3U7Kz740blbPUmkPEJNHS5ZKja4a2ZQOUmVQ0fylIN2XGYzDiWuhYHanY2WX16cUVJxobHLU1GBi5m3LjHidGvwsJ7fW1dVX3A3UGT4pI8mPVSIrLjiQkL4x7D3uKVmipyf097ocA2cAAACc0lEQVR42r2V53KcMBRGF5DgXklI9LaNzfZessXdyfu/VIS99ngdL/6VnAGNNPfwzUVihsZ/gKLvwfeaZGa32530xDce+r1Jnvd7iUtqPe4tkkm+nKdxOmd1eV4cp608n4gobiW0xoQoTlrzJIqiyTypaZNDFCU9JwiiRb8fpzWJJIqj4WC8PD7Nojjl10VhRYvp8w/NcRjX7VDaGhbjyntaTUf9GjHbj4pRvlq1Ru12tr/uGcU+3aRJvzVsrEf7rO6cH9vH5XhUjNfP08eatxYQtzfjdTnb5Jt2AnjNkyC5cSrvTqe72aEngdArIlJC7MlhVpazshUgk3BNRAY8KA5lWU4jC4F9LdKmaRvQCIpsPJ5mCxvRCBV+IaqwqWTAnWKQZYNBbBjCNZWSX3yyrlLg9By3PRhM+4Zto6eUy/4SfcY81zNMajbNZrOJaDPf8zz/swchIQLANk2zq7nxfQcJEvZ5M6VJWFOZpt/pdH5qOp0bVUUzgvwyUPi+DlPVpWnqR1zXC3UzjFyKDEJX15TSg+sr3wMAokEfPkYiMCLCCtcNGQt1GBEIhAlGPh4kJYSBIFWGLkA1hNVKS+gRId9FBoxRCgRQUCoRbh9utV/BAQm+R0rKCJc2Amoo4s3v7T0iCo1BAUHys8g580Jh0Rfk7XZ7v0X6ii09NxRvomGL1uq4trjG4Dz89dDREw3n/Xw5Jw1DnsUgOczuVs4LwcttWU6Ftcw765Fjn0UZDHe7085yLF0/O3qolptd2i4Co3HGibJB1q5qr6ZtV1I1GQ6TYmEJaLyhG1KWxv6AVgNlIBJ6edxS929fwA1OBaX/6h/wB3jAN2cclVbTAAAAAElFTkSuQmCC" height="40" width="40" preserveAspectRatio="xMinYMin slice" clip-path="inset(0% round 25px)"/>
   </g>
@@ -347,7 +347,7 @@
 
   <!-- Twitter -->
   <g transform="translate(10, 192)" class="msg-4">
-    <rect x="50" width="598" height="42" rx="18.0355" class="bubble" />
+    <rect x="50" width="580" height="42" rx="18.0355" class="bubble" />
     <text x="65" y="27">
       You can find my socials at
       <a xlink:href="https://wahyu-aji-pangestu.vercel.app/">wahyu-aji-pangestu.vercel.app</a>

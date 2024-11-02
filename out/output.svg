@@ -296,9 +296,9 @@
 
   <!-- From Bali... -->
   <g transform="translate(10, 48)" class="msg-2">
-    <rect x="50" width="{dayBubbleWidth}" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="65" y="27" class="text">I live in Denpasar Bali, Indonesia where it's supposed to be</text>
-    <text x="65" y="50" class="text">{degC}°C ({degF}°F) and <tspan class="emoji">{weatherEmoji}</tspan> today.</text>
+    <rect x="50" width="505" height="66.1302" rx="18.0355" class="bubble" />
+    <text x="65" y="27">I live in Denpasar Bali, Indonesia where it’s supposed to be</text>
+    <text x="65" y="50">32°C (90°F) and <tspan class="emoji">🌩️</tspan> today.</text>
     <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxlBMVEUcFScXEydOSFgPDCMwKzwiHjASDyYMCiAsJzkoJDY0Lj8bFysnIDNBO0ofGi1HQ1Q8NkZEP1AHBBw2M0QYBh0kDiYuFys5IzSRLjiSbnF5KTZRTl9vTFV4N0JsdotvZG/qg3U7Kz740blbPUmkPEJNHS5ZKja4a2ZQOUmVQ0fylIN2XGYzDiWuhYHanY2WX16cUVJxobHLU1GBi5m3LjHidGvwsJ7fW1dVX3A3UGT4pI8mPVSIrLjiQkL4x7D3uKVmipyf097ocA2cAAACc0lEQVR42r2V53KcMBRGF5DgXklI9LaNzfZessXdyfu/VIS99ngdL/6VnAGNNPfwzUVihsZ/gKLvwfeaZGa32530xDce+r1Jnvd7iUtqPe4tkkm+nKdxOmd1eV4cp608n4gobiW0xoQoTlrzJIqiyTypaZNDFCU9JwiiRb8fpzWJJIqj4WC8PD7Nojjl10VhRYvp8w/NcRjX7VDaGhbjyntaTUf9GjHbj4pRvlq1Ru12tr/uGcU+3aRJvzVsrEf7rO6cH9vH5XhUjNfP08eatxYQtzfjdTnb5Jt2AnjNkyC5cSrvTqe72aEngdArIlJC7MlhVpazshUgk3BNRAY8KA5lWU4jC4F9LdKmaRvQCIpsPJ5mCxvRCBV+IaqwqWTAnWKQZYNBbBjCNZWSX3yyrlLg9By3PRhM+4Zto6eUy/4SfcY81zNMajbNZrOJaDPf8zz/swchIQLANk2zq7nxfQcJEvZ5M6VJWFOZpt/pdH5qOp0bVUUzgvwyUPi+DlPVpWnqR1zXC3UzjFyKDEJX15TSg+sr3wMAokEfPkYiMCLCCtcNGQt1GBEIhAlGPh4kJYSBIFWGLkA1hNVKS+gRId9FBoxRCgRQUCoRbh9utV/BAQm+R0rKCJc2Amoo4s3v7T0iCo1BAUHys8g580Jh0Rfk7XZ7v0X6ii09NxRvomGL1uq4trjG4Dz89dDREw3n/Xw5Jw1DnsUgOczuVs4LwcttWU6Ftcw765Fjn0UZDHe7085yLF0/O3qolptd2i4Co3HGibJB1q5qr6ZtV1I1GQ6TYmEJaLyhG1KWxv6AVgNlIBJ6edxS929fwA1OBaX/6h/wB3jAN2cclVbTAAAAAElFTkSuQmCC" height="40" width="40" preserveAspectRatio="xMinYMin slice" clip-path="inset(0% round 25px)"/>
   </g>
 
@@ -350,7 +350,7 @@
     <rect x="50" width="480" height="42" rx="18.0355" class="bubble" />
     <text x="65" y="27">
       You can find my socials at
-      <a xlink:href="https://wahyu-aji-pangestu.vercel.app/">wahyu-aji-pangestu.vercel.app</a>
+      <a xlink:href="https://wahyu-aji-pangestu.vercel.app/">https://wahyu-aji-pangestu.vercel.app/</a>
     </text>
     <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAxlBMVEUcFScXEydOSFgPDCMwKzwiHjASDyYMCiAsJzkoJDY0Lj8bFysnIDNBO0ofGi1HQ1Q8NkZEP1AHBBw2M0QYBh0kDiYuFys5IzSRLjiSbnF5KTZRTl9vTFV4N0JsdotvZG/qg3U7Kz740blbPUmkPEJNHS5ZKja4a2ZQOUmVQ0fylIN2XGYzDiWuhYHanY2WX16cUVJxobHLU1GBi5m3LjHidGvwsJ7fW1dVX3A3UGT4pI8mPVSIrLjiQkL4x7D3uKVmipyf097ocA2cAAACc0lEQVR42r2V53KcMBRGF5DgXklI9LaNzfZessXdyfu/VIS99ngdL/6VnAGNNPfwzUVihsZ/gKLvwfeaZGa32530xDce+r1Jnvd7iUtqPe4tkkm+nKdxOmd1eV4cp608n4gobiW0xoQoTlrzJIqiyTypaZNDFCU9JwiiRb8fpzWJJIqj4WC8PD7Nojjl10VhRYvp8w/NcRjX7VDaGhbjyntaTUf9GjHbj4pRvlq1Ru12tr/uGcU+3aRJvzVsrEf7rO6cH9vH5XhUjNfP08eatxYQtzfjdTnb5Jt2AnjNkyC5cSrvTqe72aEngdArIlJC7MlhVpazshUgk3BNRAY8KA5lWU4jC4F9LdKmaRvQCIpsPJ5mCxvRCBV+IaqwqWTAnWKQZYNBbBjCNZWSX3yyrlLg9By3PRhM+4Zto6eUy/4SfcY81zNMajbNZrOJaDPf8zz/swchIQLANk2zq7nxfQcJEvZ5M6VJWFOZpt/pdH5qOp0bVUUzgvwyUPi+DlPVpWnqR1zXC3UzjFyKDEJX15TSg+sr3wMAokEfPkYiMCLCCtcNGQt1GBEIhAlGPh4kJYSBIFWGLkA1hNVKS+gRId9FBoxRCgRQUCoRbh9utV/BAQm+R0rKCJc2Amoo4s3v7T0iCo1BAUHys8g580Jh0Rfk7XZ7v0X6ii09NxRvomGL1uq4trjG4Dz89dDREw3n/Xw5Jw1DnsUgOczuVs4LwcttWU6Ftcw765Fjn0UZDHe7085yLF0/O3qolptd2i4Co3HGibJB1q5qr6ZtV1I1GQ6TYmEJaLyhG1KWxv6AVgNlIBJ6edxS929fwA1OBaX/6h/wB3jAN2cclVbTAAAAAElFTkSuQmCC" height="40" width="40" preserveAspectRatio="xMinYMin slice" clip-path="inset(0% round 25px)"/>
   </g>

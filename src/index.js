@@ -1,69 +1,86 @@
+// Yo btw, this is stolen from @jasonlong's and @NHendra Github profile.
+// (https://github.com/jasonlong/jasonlong/blob/c9c760318610785772bd0552a9dafc70b64c9e16/build-svg.js)
+// I have changed stuff and refactored stuff.
+
 const fs = require('fs');
 const fetch = require('node-fetch');
+const qty = require('js-quantities')
 
-// OpenWeather API settings
-const WEATHER_API_KEY = 'YOUR_OPENWEATHER_API_KEY';
-const CITY_NAME = 'Denpasar';
-
-async function generateWeatherSvg() {
-  try {
-    // Baca template SVG
-    const templateSvg = fs.readFileSync('messageTemplate.svg', 'utf8');
-
-    // Ambil data cuaca dari OpenWeatherMap API
-    const weatherResponse = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&appid=${WEATHER_API_KEY}&units=metric`
-    );
-    const weatherData = await weatherResponse.json();
-
-    // Hitung suhu
-    const tempC = Math.round(weatherData.main.temp);
-    const tempF = Math.round((tempC * 9 / 5) + 32);
-
-    // Dapatkan emoji cuaca
-    const weatherCode = weatherData.weather[0].id;
-    const weatherEmoji = getWeatherEmoji(weatherCode);
-
-    // Ganti placeholder dengan nilai aktual
-    let outputSvg = templateSvg
-      .replace('{degC}', tempC)
-      .replace('{degF}', tempF)
-      .replace('{weatherEmoji}', weatherEmoji);
-
-    // Tulis ke file output
-    fs.writeFileSync('output.svg', outputSvg);
-    console.log('SVG berhasil dibuat!');
-
-  } catch(error) {
-    console.error('Error saat membuat SVG:', error);
-  }
+const WEATHER_API_TOKEN = process.env.WEATHER_API_TOKEN
+const WEATHER_DOMAIN = 'http://dataservice.accuweather.com'
+const WEATHER_EMOJIS = {
+  1: '☀️',
+  2: '☀️',
+  3: '🌥️',
+  4: '🌥️',
+  5: '🌥️',
+  6: '🌥️',
+  7: '☁️',
+  8: '☁️',
+  11: '😶‍🌫️',
+  12: '🌧️',
+  13: '🌧️',
+  14: '🌧️',
+  15: '🌩️',
+  16: '🌩️',
+  17: '🌧️',
+  18: '🌧️',
+  19: '🌧️',
+  20: '🌧️',
+  21: '🌧️',
+  22: '❄️',
+  23: '❄️',
+  24: '🌧️',
+  25: '🌧️',
+  26: '🌧️',
+  29: '🌧️',
+  30: '😶‍🌫️',
+  31: '🥵',
+  32: '🥶',
 }
 
-function getWeatherEmoji(code) {
-  const weatherEmojis = {
-    // Thunderstorm
-    '2': '🌩️',
-    // Drizzle
-    '3': '🌧️',
-    // Rain
-    '5': '🌧️',
-    // Snow
-    '6': '❄️',
-    // Atmosphere (fog, mist, etc)
-    '7': '😶‍🌫️',
-    // Clear
-    '800': '☀️',
-    // Clouds
-    '8': '☁️'
-  };
-
-  code = code.toString();
-  if(weatherEmojis[code]) return weatherEmojis[code];
-  return weatherEmojis[code[0]] || '☀️';
+const dayBubbleWidths = {
+  Monday: 210,
+  Tuesday: 210,
+  Wednesday: 240,
+  Thursday: 220,
+  Friday: 195,
+  Saturday: 220,
+  Sunday: 205,
 }
 
-// Jalankan generator
-generateWeatherSvg();
+const locationKey = '202196'
 
-// Opsional: Update setiap jam
-setInterval(generateWeatherSvg, 3600000);
+fetch(`${WEATHER_DOMAIN}/forecasts/v1/daily/1day/${locationKey}?apikey=${WEATHER_API_TOKEN}`)
+  .then(response => response.json())
+  .then(async response => {
+    const todayDay = (await (await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Asia:Makassar")).json()).dayOfWeek
+
+    console.log('Today is', todayDay)
+    console.log(response)
+
+    const degF = Math.round(response?.DailyForecasts[0]?.Temperature?.Maximum?.Value ?? 86)
+    const degC = Math.round(qty(`${degF} tempF`).to('tempC').scalar)
+    const icon = response.DailyForecasts[0]?.Day?.Icon
+
+    fs.readFile(`${__dirname}/messageTemplate.svg`, 'utf8', (error, data) => {
+      if(error) {
+        console.error(error);
+        throw error
+      }
+
+      data = data.replace('{degF}', degF)
+      data = data.replace('{degC}', degC)
+      data = data.replace('{weatherEmoji}', WEATHER_EMOJIS[icon])
+      data = data.replace('{todayDay}', todayDay)
+      data = data.replace('{dayBubbleWidth}', dayBubbleWidths[todayDay])
+
+      data = fs.writeFile(`${__dirname}/../out/output.svg`, data, (err) => {
+        if(err) {
+          console.error(err)
+          throw err
+        }
+      })
+    })
+  })
+  .catch(error => console.log(error))

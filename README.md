@@ -1,6 +1,4 @@
 [![chat window](./out/output.svg)](https://wahyu-aji-pangestu.vercel.app/)
-<h1 align="center">Hi 👋, I'm Aji</h1>
-<h3 align="center">A passionate frontend developer from Indonesia</h3>
 
 <img align="right" alt="Coding" width="200" src="https://media1.tenor.com/m/qMH5o_XizbcAAAAd/but-here%27s-the-coder.gif">
 

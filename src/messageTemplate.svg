@@ -279,8 +279,8 @@
   <!-- typing 2 -->
   <g transform="translate(10, 48)" class="typing-2">
     <rect x="58.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
-    <circle cx="63.591" cy="33.091" r="7.68185" class="bubble" />
-    <circle cx="53.54547" cy="41.9547" r="3.54547" class="bubble" />
+  <circle cx="63.591" cy="33.091" r="7.68185" class="bubble" />
+  <circle cx="53.54547" cy="41.9547" r="3.54547" class="bubble" />
 
     <circle cx="77.4778" cy="20.9773" r="5.02275" fill="#fff">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite" />

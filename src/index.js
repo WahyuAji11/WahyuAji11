@@ -1,127 +1,69 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
-const qty = require('js-quantities');
 
-// OpenWeather API settings - replace with your API key
+// OpenWeather API settings
 const WEATHER_API_KEY = 'YOUR_OPENWEATHER_API_KEY';
-const DENPASAR_COORDS = {
-  lat: -8.6500,
-  lon: 115.2167
-};
+const CITY_NAME = 'Denpasar';
 
-const WEATHER_EMOJIS = {
-  // Clear
-  '01d': '☀️',
-  '01n': '🌙',
-  // Few clouds
-  '02d': '🌥️',
-  '02n': '🌥️',
-  // Scattered clouds
-  '03d': '☁️',
-  '03n': '☁️',
-  // Broken clouds
-  '04d': '☁️',
-  '04n': '☁️',
-  // Shower rain
-  '09d': '🌧️',
-  '09n': '🌧️',
-  // Rain
-  '10d': '🌧️',
-  '10n': '🌧️',
-  // Thunderstorm
-  '11d': '🌩️',
-  '11n': '🌩️',
-  // Snow
-  '13d': '❄️',
-  '13n': '❄️',
-  // Mist
-  '50d': '😶‍🌫️',
-  '50n': '😶‍🌫️'
-};
-
-const dayBubbleWidths = {
-  Monday: 210,
-  Tuesday: 210,
-  Wednesday: 240,
-  Thursday: 220,
-  Friday: 195,
-  Saturday: 220,
-  Sunday: 205,
-};
-
-async function getCurrentDay() {
+async function generateWeatherSvg() {
   try {
-    const response = await fetch("https://www.timeapi.io/api/Time/current/zone?timeZone=Asia/Makassar");
-    const data = await response.json();
-    return data.dayOfWeek;
+    // Baca template SVG
+    const templateSvg = fs.readFileSync('messageTemplate.svg', 'utf8');
+
+    // Ambil data cuaca dari OpenWeatherMap API
+    const weatherResponse = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+    const weatherData = await weatherResponse.json();
+
+    // Hitung suhu
+    const tempC = Math.round(weatherData.main.temp);
+    const tempF = Math.round((tempC * 9 / 5) + 32);
+
+    // Dapatkan emoji cuaca
+    const weatherCode = weatherData.weather[0].id;
+    const weatherEmoji = getWeatherEmoji(weatherCode);
+
+    // Ganti placeholder dengan nilai aktual
+    let outputSvg = templateSvg
+      .replace('{degC}', tempC)
+      .replace('{degF}', tempF)
+      .replace('{weatherEmoji}', weatherEmoji);
+
+    // Tulis ke file output
+    fs.writeFileSync('output.svg', outputSvg);
+    console.log('SVG berhasil dibuat!');
+
   } catch(error) {
-    console.error('Error fetching current day:', error);
-    // Fallback to local time
-    return new Date().toLocaleDateString('en-US', { weekday: 'long' });
+    console.error('Error saat membuat SVG:', error);
   }
 }
 
-async function getDenpasarWeather() {
-  try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${DENPASAR_COORDS.lat}&lon=${DENPASAR_COORDS.lon}&appid=${WEATHER_API_KEY}&units=imperial`;
-    const response = await fetch(url);
-    const data = await response.json();
+function getWeatherEmoji(code) {
+  const weatherEmojis = {
+    // Thunderstorm
+    '2': '🌩️',
+    // Drizzle
+    '3': '🌧️',
+    // Rain
+    '5': '🌧️',
+    // Snow
+    '6': '❄️',
+    // Atmosphere (fog, mist, etc)
+    '7': '😶‍🌫️',
+    // Clear
+    '800': '☀️',
+    // Clouds
+    '8': '☁️'
+  };
 
-    return {
-      tempF: Math.round(data.main.temp),
-      tempC: Math.round(qty(`${data.main.temp} tempF`).to('tempC').scalar),
-      weatherIcon: data.weather[0].icon
-    };
-  } catch(error) {
-    console.error('Error fetching weather:', error);
-    // Return default values if API fails
-    return {
-      tempF: 90,
-      tempC: 32,
-      weatherIcon: '01d'
-    };
-  }
+  code = code.toString();
+  if(weatherEmojis[code]) return weatherEmojis[code];
+  return weatherEmojis[code[0]] || '☀️';
 }
 
-async function generateWeatherSVG() {
-  try {
-    const [todayDay, weather] = await Promise.all([
-      getCurrentDay(),
-      getDenpasarWeather()
-    ]);
+// Jalankan generator
+generateWeatherSvg();
 
-    fs.readFile(`${__dirname}/messageTemplate.svg`, 'utf8', (error, data) => {
-      if(error) {
-        console.error('Error reading template:', error);
-        throw error;
-      }
-
-      // Replace template variables
-      data = data.replace('{degF}', weather.tempF)
-        .replace('{degC}', weather.tempC)
-        .replace('{weatherEmoji}', WEATHER_EMOJIS[weather.weatherIcon])
-        .replace('{todayDay}', todayDay)
-        .replace('{dayBubbleWidth}', dayBubbleWidths[todayDay]);
-
-      // Write the final SVG
-      fs.writeFile(`${__dirname}/../out/output.svg`, data, (err) => {
-        if(err) {
-          console.error('Error writing output:', err);
-          throw err;
-        }
-        console.log('Successfully generated weather SVG!');
-      });
-    });
-  } catch(error) {
-    console.error('Error generating SVG:', error);
-  }
-}
-
-// Run the generator
-generateWeatherSVG();
-
-// Optional: Set up a cron job to update every hour
-if(require.main === module) {
-  const CronJob = require('cron').CronJob;
-  new CronJob('0 * * * *', generateWeatherSVG, null, true, 'Asia/Makassar');
-}
+// Opsional: Update setiap jam
+setInterval(generateWeatherSvg, 3600000);
